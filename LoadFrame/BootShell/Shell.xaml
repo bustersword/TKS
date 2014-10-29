@@ -1,0 +1,68 @@
+﻿<UserControl
+    x:Class="BootShell.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+    xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"  
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+  
+    xmlns:prism="http://www.codeplex.com/prism"
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="GeneralVisualStateGroup" >
+            <VisualStateGroup.Transitions>
+                <VisualTransition GeneratedDuration="0:0:1">
+                    <VisualTransition.GeneratedEasingFunction>
+                        <BackEase EasingMode="EaseOut" Amplitude="0.5"/>
+                    </VisualTransition.GeneratedEasingFunction>
+                </VisualTransition>
+            </VisualStateGroup.Transitions>
+            <VisualState x:Name="IdleState">
+                <Storyboard>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="InfoGrid">
+                        <DiscreteObjectKeyFrame KeyTime="0">
+                            <DiscreteObjectKeyFrame.Value>
+                                <Thickness>3,3,3,-60</Thickness>
+                            </DiscreteObjectKeyFrame.Value>
+                        </DiscreteObjectKeyFrame>
+                    </ObjectAnimationUsingKeyFrames>
+                </Storyboard>
+            </VisualState>
+            <VisualState x:Name="InfoPrintState">
+                <Storyboard>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="InfoGrid">
+                        <DiscreteObjectKeyFrame KeyTime="0">
+                            <DiscreteObjectKeyFrame.Value>
+                                <Thickness>3</Thickness>
+                            </DiscreteObjectKeyFrame.Value>
+                        </DiscreteObjectKeyFrame>
+                    </ObjectAnimationUsingKeyFrames>
+                </Storyboard>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="500*"/>
+        </Grid.RowDefinitions>
+        <ContentControl HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  prism:RegionManager.RegionName="LogoRegion"   />
+
+        <ContentControl HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  prism:RegionManager.RegionName="MyRegion"   />
+
+        <Grid x:Name="InfoGrid" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="350" Height="50" Margin="3,0,0,-60" Grid.Row="1">
+            <Rectangle x:Name="rectangle" Stroke="#FF8AB623" StrokeThickness="2" RadiusX="3" RadiusY="3" Fill="#E6FFFFCA"/>
+            <Image HorizontalAlignment="Left" Margin="5" Source="image/Info.png" Stretch="Fill" VerticalAlignment="Center" Width="40" Height="40"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding InfoString, Mode=TwoWay}" Margin="55,5,5,5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image HorizontalAlignment="Right" Height="12" Source="image/Remove.png" Stretch="Fill" VerticalAlignment="Top" Width="12" Margin="0,-4,-6,0">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="2" ShadowDepth="2"/>
+                </Image.Effect>
+            </Image>
+        </Grid>
+    </Grid>
+
+</UserControl>

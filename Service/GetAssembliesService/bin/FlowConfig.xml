@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<flowroot>
+  <flow name="copframe">
+
+     <step name="LoginLibrary" type="LoginLibrary.LoginPage,LoginLibrary" ispage="true" ignore="false" isdownloaded="false" order="1"></step>
+    <step name="MainPage" type="MainPage.MainPage,MainPage" ispage="true" ignore="false" isdownloaded="true" order="2"></step>
+  </flow>
+   
+</flowroot>

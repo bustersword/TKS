@@ -1,0 +1,102 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" x:Class="ControlsSample.Controls"
+    mc:Ignorable="d"
+    d:DesignHeight="700" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/TKS.Controls.Theme;component/JetPack.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border Style="{StaticResource BackgroundBorderStyle}" >
+        <Grid x:Name="LayoutRoot" Margin="0,10,0,1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="57*"/>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="316*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="56,10,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="155,10,0,0" Style="{StaticResource BlueButton}"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="261,10,0,0" Style="{StaticResource GreenButton}"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="359,10,0,0" Style="{StaticResource LogoIcon}"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="459,10,0,0" Style="{StaticResource NavLogoIcon}"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="565,10,0,0" Style="{StaticResource OpacityButton}"/>
+            <Button Content="Button"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="75" Margin="661,10,0,0" Style="{StaticResource OrangeButton}"/>
+
+
+
+            <sdk:Label HorizontalAlignment="Left" Height="28" Margin="56,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Content="label标签" />
+            <TextBox HorizontalAlignment="Left" Height="27" Margin="176,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="27" Margin="314,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Style="{StaticResource DarkTextBox}"/>
+            <TextBox HorizontalAlignment="Left" Height="27" Margin="446,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Style="{StaticResource PagingTextBoxStyle}"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="56,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="176,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Style="{StaticResource ApplicationNameStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="300,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Style="{StaticResource ContentTextStyle}"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="399,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="598,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Heading1" VerticalAlignment="Top" Style="{StaticResource Heading1}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="56,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Heading2" VerticalAlignment="Top" Style="{StaticResource Heading2}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="208,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Heading3" VerticalAlignment="Top" Style="{StaticResource Heading3}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="324,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Heading4" VerticalAlignment="Top" Style="{StaticResource Heading4}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="423,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Heading5" VerticalAlignment="Top" Style="{StaticResource Heading5}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="516,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Heading6" VerticalAlignment="Top" Style="{StaticResource Heading6}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="598,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="HeadingBase" VerticalAlignment="Top" Style="{StaticResource HeadingBase}"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="38,10,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="142,10,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="269,10,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+            <ComboBox HorizontalAlignment="Left" Margin="402,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="选项1"/>
+                <ComboBoxItem Content="选项2"/>
+            </ComboBox>
+            <ListBox HorizontalAlignment="Left" Height="139" Margin="56,19,0,0" Grid.Row="5" VerticalAlignment="Top" Width="153">
+                <ListBoxItem Content="选项1"/>
+                <ListBoxItem Content="选项2"/>
+            </ListBox>
+            <sdk:TabControl HorizontalAlignment="Left" Height="139" Margin="234,19,0,0" Grid.Row="5" VerticalAlignment="Top" Width="212">
+                <sdk:TabItem>
+                    <Grid>
+                        <TextBlock>
+							<Run Text="1111111"/>
+                        </TextBlock>
+                    </Grid>
+                </sdk:TabItem>
+                <sdk:TabItem>
+                    <Grid>
+                        <TextBlock>
+							<Run Text="2222222"/>
+                        </TextBlock>
+                    </Grid>
+                </sdk:TabItem>
+            </sdk:TabControl>
+            <sdk:DataGrid HorizontalAlignment="Left" Height="139" Margin="474,19,0,0" Grid.Row="5" VerticalAlignment="Top" Width="293">
+                <sdk:DataGrid.Columns>
+                    <sdk:DataGridCheckBoxColumn Binding="{x:Null}" CanUserSort="True" CanUserReorder="True" CellStyle="{x:Null}" CanUserResize="True" ClipboardContentBinding="{x:Null}" DisplayIndex="-1" DragIndicatorStyle="{x:Null}" EditingElementStyle="{x:Null}" ElementStyle="{x:Null}" HeaderStyle="{x:Null}" Header="选择" IsThreeState="False" IsReadOnly="False" MaxWidth="Infinity" MinWidth="0" SortMemberPath="{x:Null}" Visibility="Visible" Width="Auto"/>
+                    <sdk:DataGridTextColumn Binding="{x:Null}" CanUserSort="True" CanUserReorder="True" CellStyle="{x:Null}" CanUserResize="True" ClipboardContentBinding="{x:Null}" DisplayIndex="-1" DragIndicatorStyle="{x:Null}" EditingElementStyle="{x:Null}" ElementStyle="{x:Null}" Foreground="{x:Null}" FontWeight="Normal" FontStyle="Normal" HeaderStyle="{x:Null}" Header="标题1" IsReadOnly="False" MaxWidth="Infinity" MinWidth="0" SortMemberPath="{x:Null}" Visibility="Visible" Width="Auto"/>
+                </sdk:DataGrid.Columns>
+            </sdk:DataGrid>
+            <sdk:DatePicker HorizontalAlignment="Left" Height="23" Margin="574,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120"/>
+
+
+            <toolkit:Expander HorizontalAlignment="Left" Height="100" Margin="56,32,0,0" Grid.Row="6" VerticalAlignment="Top" Width="150">
+                <Grid HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto">
+                    <TextBlock>asdlajsldajdlakjdlaskjdlkajcksjdlakjdlasjdlsadjasdlkajsdlkajsdjald</TextBlock>
+                </Grid>
+            </toolkit:Expander>
+
+
+        </Grid>
+    </Border>
+</UserControl>

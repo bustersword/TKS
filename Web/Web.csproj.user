@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <StartPageUrl>BootShellTestPage.aspx</StartPageUrl>
+          <StartAction>SpecificPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>True</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
+          <ProjectOutputReferences>
+            <Ref Project="{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}" Folder="ClientBin">DataGrid_Sample.xap</Ref>
+            <Ref Project="{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}" Folder="ClientBin">DataGrid_Sample_MVVM.xap|System.ComponentModel.Composition.zip|System.Windows.Controls.Data.Input.zip|System.Windows.Controls.Data.zip|System.Windows.Controls.Toolkit.zip|System.Windows.Controls.zip</Ref>
+            <Ref Project="{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}" Folder="ClientBin">System.ComponentModel.Composition.zip|System.Windows.Controls.Data.Input.zip|System.Windows.Controls.Navigation.zip|System.Windows.Controls.Toolkit.zip|WelcomePage.xap</Ref>
+            <Ref Project="{91083AC8-9036-43F1-8074-A59769558862}" Folder="ClientBin">BaseConfigModule.xap</Ref>
+            <Ref Project="{2E123853-63CC-4BE8-9658-1D2CE4466CDE}" Folder="ClientBin">TreeViewV1.xap</Ref>
+            <Ref Project="{384EC7C2-52B4-4382-820A-A69BA7CF57D2}" Folder="ClientBin">TreeViewV2.xap</Ref>
+            <Ref Project="{149BFEBF-459F-43D3-BA47-703755504383}" Folder="ClientBin">ControlsSample.xap</Ref>
+            <Ref Project="{5A38A402-F32F-456B-BD48-1D2212B7D704}" Folder="ClientBin">BootShell.xap</Ref>
+            <Ref Project="{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}" Folder="ClientBin">MainPageV2.xap</Ref>
+            <Ref Project="{76D23DA2-7A25-4C48-BE7B-4053663843B0}" Folder="ClientBin">MainPageV1.xap</Ref>
+          </ProjectOutputReferences>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

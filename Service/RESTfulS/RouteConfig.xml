@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!--消息路由-->
+  <Route>
+    <pipe Type="RESTfulS.MYLPA_APPLY" RouteAddress="" ></pipe>
+    <pipe Type="RESTfuls2.TEST2Handler" RouteAddress="http://localhost:2129/RESTfuls2Service.svc/Rest/" ></pipe>
+  </Route>
+</config>

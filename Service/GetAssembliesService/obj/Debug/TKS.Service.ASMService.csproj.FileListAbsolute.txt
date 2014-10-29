@@ -1,0 +1,8 @@
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\bin\default.xml
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\bin\FlowConfig.xml
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\bin\DllConfig.xml
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\bin\TKS.Service.ASMService.dll
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\bin\TKS.Service.ASMService.pdb
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\obj\Debug\TKS.Service.ASMService.dll
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\obj\Debug\TKS.Service.ASMService.pdb
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Service\GetAssembliesService\obj\Debug\TKS.Service.ASMService.csprojResolveAssemblyReference.cache

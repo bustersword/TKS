@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+ 
+
+      <!--<add key="DBType" value="mssql"/>
+    <add key="DBDSN" value="Server=192.168.106.108;Database=SCMY;Uid=qyq;Pwd=123456789;" />-->
+    <add key="DBType" value="oracle"/>
+    <add key="DBDSN" value="user id=ismp;data source=dev;password=ismp;Max Pool Size=200" />
+  </appSettings>
+</configuration>

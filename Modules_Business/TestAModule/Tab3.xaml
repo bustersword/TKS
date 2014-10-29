@@ -1,0 +1,69 @@
+﻿<navigation:Page 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+      xmlns:GridEx="clr-namespace:GridExtension;assembly=GridExtension"
+   
+    x:Class="TestAModule.Tab3"
+     
+       mc:Ignorable="d"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Tab3 Page">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="337*"/>
+            <RowDefinition Height="143*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="LayoutRoot" Margin="0,0,0,61" Grid.RowSpan="2"   >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="211*"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="233*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+            <TextBox x:Name="TKS_put1" HorizontalAlignment="Left" Height="23" Margin="64,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="TKS_put2"   HorizontalAlignment="Left" Height="23" Margin="64,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+            <TextBox x:Name="TKS_put3" HorizontalAlignment="Left" Height="23" Margin="36,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <ComboBox x:Name="TKS_com1" Grid.Column="1" HorizontalAlignment="Left" Margin="36,42,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+            <RadioButton x:Name="TKS_rad1" Content="RadioButton" Grid.Column="2" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="TKS_chk1" Content="CheckBox" Grid.Column="2" HorizontalAlignment="Left" Margin="48,45,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <ComboBox x:Name="TKS_com2" HorizontalAlignment="Left" Margin="64,42,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding chk}"></CheckBox>
+                        <TextBlock Text="{Binding txt}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+ 
+        <ItemsControl Grid.Row="2" Grid.Column="1"  x:Name="TKS_checks"  Background="#B28BB2F1">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="3">
+                        <StackPanel>
+                            <CheckBox IsChecked="{Binding chk}" Content="{Binding txt}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+            <ListBox x:Name="TKS_list" Grid.Column="2" SelectionMode="Multiple" HorizontalAlignment="Left" Height="100" Margin="63,32,0,0" Grid.Row="2" VerticalAlignment="Top" Width="100"/>
+            <ListBox x:Name="TKS_listSingle" HorizontalAlignment="Left" Height="100" Margin="64,154,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120"/>
+
+        </Grid>
+        <Button Content="获取上面容器内的结果" Click="Button_Click_1" HorizontalAlignment="Left" Margin="216,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="176"/>
+    </Grid>
+</navigation:Page>

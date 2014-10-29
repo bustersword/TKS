@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="customBinding_duplexService" closeTimeout="23:59:59" receiveTimeout="00:02:00" sendTimeout="23:59:59">
+          <binaryMessageEncoding />
+          <tcpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+        </binding>
+      </customBinding>
+      <basicHttpBinding>
+
+        <binding name="BasicHttpBinding_IAsmService" closeTimeout="00:10:00" openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="655360000" maxBufferPoolSize="52428800" maxReceivedMessageSize="655360000" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384"/>
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm=""/>
+            <message clientCredentialType="UserName" algorithmSuite="Default"/>
+          </security>
+        </binding>
+        <binding name="BasicHttpBinding_ISsoService" maxBufferSize="2147483647"
+                        maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="net.tcp://192.168.106.223:4503/NotifyService.svc"
+                 binding="customBinding" bindingConfiguration="customBinding_duplexService"
+                 contract="PDA.COP.FW.IClientContract.INotifyBoard" name="duplexService" />
+
+
+
+      <endpoint address="http://192.168.106.223:8200/WorkFlowService/WFService.svc"
+              binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IAsmService"
+              contract="IWFService" name="IWFService"    />
+
+
+
+      <endpoint address="http://192.168.106.223:8400/WFClient/desingerWF.svc"
+              binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IAsmService"
+              contract="WorkFlowDesigner.Service4WFDesigner.IWF" name="iwf"    />
+
+
+      <endpoint address="http://192.168.106.223/SSOService/SsoService.svc"
+              binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISsoService"
+              contract="ISsoService" name="BasicHttpBinding_ISsoService" />
+
+    </client>
+  </system.serviceModel>
+
+  <!--tab description-->
+  <Tabs>
+    <Tab name="sb">
+      <step assemblyname="TestAModule" description="测试1" ignore="False" order="1" type="TestAModule.tab1"  />
+      <step assemblyname="TestAModule" description="测试2" ignore="False" order="2" type="TestAModule.Tab2"  />
+      <step assemblyname="TestAModule" description="测试3" ignore="False" order="3" type="TestAModule.Tab3"  />
+      <step assemblyname="TestAModule" description="测试5" ignore="False" order="5" type="TestAModule.Tab5"  />
+
+    </Tab>
+  </Tabs>
+
+  <appSettings>
+    <!--rest服务地址-->
+    <!--2号服务器-->
+    <!--<add key="RestfulAddress" value="http://localhost:2129/RESTfuls2Service.svc/Rest"/>-->
+
+    <!--1号服务器-->
+    <add key="RestfulAddress" value="http://localhost:5621/RESTfulService.svc/Rest"/>
+  </appSettings>
+</config>

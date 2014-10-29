@@ -1,0 +1,41 @@
+﻿<navigation:Page x:Class="MainPageV2.MainPage" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:prism="http://www.codeplex.com/prism"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="MainPage Page">
+    <navigation:Page.Resources>
+       
+    </navigation:Page.Resources>
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF716E6E" Offset="1"/>
+                <GradientStop Color="#FFBDB8B8"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="400*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0">
+        <ContentControl  Margin="5" HorizontalContentAlignment="Stretch"  VerticalContentAlignment="Stretch"  prism:RegionManager.RegionName="Left" />
+        </Border>
+        <controls:GridSplitter    Grid.Column="1" IsEnabled="False"   />
+        <Border Grid.Column="2" >
+        <sdk:Frame x:Name="Main" Margin="5"></sdk:Frame>
+        </Border>
+    </Grid>
+
+
+</navigation:Page>

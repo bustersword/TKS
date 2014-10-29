@@ -1,0 +1,453 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "site", "site", "{1249D25F-305E-4096-B3E3-3D333594D1B3}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/site"
+		Debug.AspNetCompiler.PhysicalPath = "site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\site\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/site"
+		Release.AspNetCompiler.PhysicalPath = "site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\site\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1958"
+		ProjOutputReferences = "{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}|ClientBin|false;{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}|ClientBin|false;{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{D016F912-4221-42AD-BEB3-93DBE28B12C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{39426750-30AC-47D4-B887-0C2BA5C96977}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadFrame", "LoadFrame", "{E793C562-26E1-48BB-97BC-146B117710DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadFrame", "LoadFrame\LoadFrame\LoadFrame.csproj", "{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{9C156F89-EBFF-436D-A945-EB8C32ECE039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.ImgMenu", "Controls\ImgMenu\TKS.Controls.ImgMenu.csproj", "{61ABD60D-9676-4BA5-84B4-863A2F84EDE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.MessageBoxLibrary", "Controls\SilverlightMessageBoxLibrary\TKS.Controls.MessageBoxLibrary.csproj", "{D3644B9C-8241-4457-B153-FFAB8E674A71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules_Business", "Modules_Business", "{F13081F4-2A6F-46BE-B637-87065167C3F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules_Flows", "Modules_Flows", "{FEF46BAF-660B-48F4-AFEC-18DCD740748C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{C7AE55AF-0B4B-4513-B08E-94BF955DE435}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\FCOPY.bat = Tools\FCOPY.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F0298B38-EC96-4AC3-8E58-2303E29FDEAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDllXML", "Tools\CreateDllXML\CreateDllXML.csproj", "{D0E08F62-2121-4AF8-B3B6-0F7049239F98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "注意项", "注意项", "{5E177719-0FA6-425E-A887-2D4B4D1A91B1}"
+	ProjectSection(SolutionItems) = preProject
+		DevelopTips.txt = DevelopTips.txt
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{11B26AB8-29E7-4AA1-AA81-5E28B65686C3}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Microsoft.Expression.Effects.dll = Lib\Microsoft.Expression.Effects.dll
+		Lib\Microsoft.Expression.Interactions.dll = Lib\Microsoft.Expression.Interactions.dll
+		Lib\Microsoft.Practices.Prism.dll = Lib\Microsoft.Practices.Prism.dll
+		Lib\Microsoft.Practices.Prism.MefExtensions.dll = Lib\Microsoft.Practices.Prism.MefExtensions.dll
+		Lib\Microsoft.Practices.ServiceLocation.dll = Lib\Microsoft.Practices.ServiceLocation.dll
+		Lib\PDA.COP.FW.CONTROLS.dll = Lib\PDA.COP.FW.CONTROLS.dll
+		Lib\PDA.COP.FW.CONTROLS.RichText.dll = Lib\PDA.COP.FW.CONTROLS.RichText.dll
+		Lib\RestSharp.dll = Lib\RestSharp.dll
+		Lib\RestSharp.Silverlight.dll = Lib\RestSharp.Silverlight.dll
+		Lib\RestSharp.xml = Lib\RestSharp.xml
+		Lib\System.Windows.Controls.Toolkit.dll = Lib\System.Windows.Controls.Toolkit.dll
+		Lib\System.Windows.Interactivity.dll = Lib\System.Windows.Interactivity.dll
+		Lib\Zlib.DbUtilities.dll = Lib\Zlib.DbUtilities.dll
+		Lib\Zlib.DbUtilities.XML = Lib\Zlib.DbUtilities.XML
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateFlows", "Tools\CreateFlows\CreateFlows.csproj", "{03C0F3A4-001C-4820-A177-F8DB914C4EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAModule", "Modules_Business\TestAModule\TestAModule.csproj", "{2845F232-813D-43B7-96C8-E5889F592482}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FDB8653D-FF77-4479-AFB3-013E8C2C281D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.BubbleContainer", "Controls\BubbleContainer\TKS.Controls.BubbleContainer.csproj", "{3E543798-E110-49C2-A211-505F5607F0D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Service.NotifyService", "Service\NotifyService\TKS.Service.NotifyService.csproj", "{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.TabContainer", "Controls\TabContainer\TKS.Controls.TabContainer.csproj", "{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.Uploader", "Controls\SilverlightUploader\TKS.Controls.Uploader.csproj", "{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.UploaderContainer", "Controls\UploaderContainer\TKS.Controls.UploaderContainer.csproj", "{FE10DA38-4092-4E99-BE4B-2FEDD00254A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTfulS", "Service\RESTfulS\RESTfulS.csproj", "{29F67486-33AC-43E4-8B51-5A59408D4824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTfuls2", "Service\MessageTransmissionSysService\RESTfuls2.csproj", "{8020F1AA-2753-467A-8FC1-0CBACEADEA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Service.RestHelper", "Service\RestHelp\TKS.Service.RestHelper.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IamConsol", "Tools\IamConsol\IamConsol.csproj", "{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.MyDataGrid", "Controls\TKS.DataGrid\TKS.Controls.MyDataGrid.csproj", "{B86AF536-61C8-468E-9967-FC9C08C74147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_Sample", "Modules_Business\DataGrid_Sample\DataGrid_Sample.csproj", "{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Controls.Theme", "Controls\TKS.Theme\TKS.Controls.Theme.csproj", "{2499C368-120F-4597-860D-48639A991B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Common", "Common\TKS.Common\TKS.Common.csproj", "{8DED3DB2-9876-4204-A427-4F37D5B44D42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTO", "DTO", "{590081DA-72C5-4D3B-92C9-4DF4C42F7648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.DTO.Service", "DTO\TKS.DTO.Service\TKS.DTO.Service.csproj", "{20F060B3-E37E-4DB4-AC75-366020945CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKS.Core.Engine", "Core\AssemblyNavigation\TKS.Core.Engine.csproj", "{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_Sample_MVVM", "Modules_Business\DataGrid_Sample_MVVM\DataGrid_Sample_MVVM.csproj", "{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{7EAD4856-3C6E-4315-A811-91144D5EE6CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WelcomePage", "Modules_Business\WelcomePage\WelcomePage.csproj", "{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseConfigModule", "Modules_Flows\BaseConfigModule\BaseConfigModule.csproj", "{91083AC8-9036-43F1-8074-A59769558862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewV1", "Modules_Flows\TreeViewV1\TreeViewV1.csproj", "{2E123853-63CC-4BE8-9658-1D2CE4466CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewV2", "Modules_Flows\TreeViewV2\TreeViewV2.csproj", "{384EC7C2-52B4-4382-820A-A69BA7CF57D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsSample", "Modules_Business\ControlsSample\ControlsSample.csproj", "{149BFEBF-459F-43D3-BA47-703755504383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainPage", "Modules_Flows\MainPage\MainPage.csproj", "{61CF8B50-3381-4FB1-9A2A-425607B74241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainPageV2", "Modules_Flows\MainPageV2\MainPageV2.csproj", "{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainPageV1", "Modules_Flows\MainPageV1\MainPageV1.csproj", "{76D23DA2-7A25-4C48-BE7B-4053663843B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootShell", "LoadFrame\BootShell\BootShell.csproj", "{5A38A402-F32F-456B-BD48-1D2212B7D704}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 34
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://221.224.206.253:8080/tfs/pdacollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LoadFrame\\LoadFrame\\LoadFrame.csproj
+		SccProjectTopLevelParentUniqueName1 = PDA.COP.FW.sln
+		SccProjectName1 = LoadFrame/LoadFrame
+		SccLocalPath1 = LoadFrame\\LoadFrame
+		SccProjectUniqueName2 = Tools\\CreateDllXML\\CreateDllXML.csproj
+		SccProjectTopLevelParentUniqueName2 = PDA.COP.FW.sln
+		SccProjectName2 = Tools/CreateDllXML
+		SccLocalPath2 = Tools\\CreateDllXML
+		SccProjectUniqueName3 = Tools\\CreateFlows\\CreateFlows.csproj
+		SccProjectTopLevelParentUniqueName3 = PDA.COP.FW.sln
+		SccProjectName3 = Tools/CreateFlows
+		SccLocalPath3 = Tools\\CreateFlows
+		SccProjectUniqueName4 = Modules_Business\\TestAModule\\TestAModule.csproj
+		SccProjectTopLevelParentUniqueName4 = PDA.COP.FW.sln
+		SccProjectName4 = Modules_Business/TestAModule
+		SccLocalPath4 = Modules_Business\\TestAModule
+		SccWebProject5 = true
+		SccProjectUniqueName5 = site
+		SccProjectName5 = site
+		SccLocalPath5 = site
+		SccProjectEnlistmentChoice5 = 2
+		SccProjectUniqueName6 = Service\\RESTfulS\\RESTfulS.csproj
+		SccProjectTopLevelParentUniqueName6 = PDA.COP.FW.sln
+		SccProjectName6 = Service/RESTfulS
+		SccLocalPath6 = Service\\RESTfulS
+		SccProjectUniqueName7 = Service\\MessageTransmissionSysService\\RESTfuls2.csproj
+		SccProjectTopLevelParentUniqueName7 = PDA.COP.FW.sln
+		SccProjectName7 = Service/MessageTransmissionSysService
+		SccLocalPath7 = Service\\MessageTransmissionSysService
+		SccProjectUniqueName8 = Tools\\IamConsol\\IamConsol.csproj
+		SccProjectTopLevelParentUniqueName8 = PDA.COP.FW.sln
+		SccProjectName8 = Tools/IamConsol
+		SccLocalPath8 = Tools\\IamConsol
+		SccProjectUniqueName9 = Modules_Business\\DataGrid_Sample\\DataGrid_Sample.csproj
+		SccProjectTopLevelParentUniqueName9 = PDA.COP.FW.sln
+		SccProjectName9 = Modules_Business/DataGrid_Sample
+		SccLocalPath9 = Modules_Business\\DataGrid_Sample
+		SccProjectUniqueName10 = Common\\TKS.Common\\TKS.Common.csproj
+		SccProjectTopLevelParentUniqueName10 = PDA.COP.FW.sln
+		SccProjectName10 = Common/TKS.Common
+		SccLocalPath10 = Common\\TKS.Common
+		SccProjectUniqueName11 = DTO\\TKS.DTO.Service\\TKS.DTO.Service.csproj
+		SccProjectTopLevelParentUniqueName11 = PDA.COP.FW.sln
+		SccProjectName11 = DTO/TKS.DTO.Service
+		SccLocalPath11 = DTO\\TKS.DTO.Service
+		SccProjectUniqueName12 = Controls\\TKS.DataGrid\\TKS.Controls.MyDataGrid.csproj
+		SccProjectTopLevelParentUniqueName12 = PDA.COP.FW.sln
+		SccProjectName12 = Controls/TKS.DataGrid
+		SccLocalPath12 = Controls\\TKS.DataGrid
+		SccProjectUniqueName13 = Controls\\SilverlightMessageBoxLibrary\\TKS.Controls.MessageBoxLibrary.csproj
+		SccProjectTopLevelParentUniqueName13 = PDA.COP.FW.sln
+		SccProjectName13 = Controls/SilverlightMessageBoxLibrary
+		SccLocalPath13 = Controls\\SilverlightMessageBoxLibrary
+		SccProjectUniqueName14 = Controls\\TKS.Theme\\TKS.Controls.Theme.csproj
+		SccProjectTopLevelParentUniqueName14 = PDA.COP.FW.sln
+		SccProjectName14 = Controls/TKS.Theme
+		SccLocalPath14 = Controls\\TKS.Theme
+		SccProjectUniqueName15 = Controls\\ImgMenu\\TKS.Controls.ImgMenu.csproj
+		SccProjectTopLevelParentUniqueName15 = PDA.COP.FW.sln
+		SccProjectName15 = Controls/ImgMenu
+		SccLocalPath15 = Controls\\ImgMenu
+		SccProjectUniqueName16 = Controls\\TabContainer\\TKS.Controls.TabContainer.csproj
+		SccProjectTopLevelParentUniqueName16 = PDA.COP.FW.sln
+		SccProjectName16 = Controls/TabContainer
+		SccLocalPath16 = Controls\\TabContainer
+		SccProjectUniqueName17 = Controls\\SilverlightUploader\\TKS.Controls.Uploader.csproj
+		SccProjectTopLevelParentUniqueName17 = PDA.COP.FW.sln
+		SccProjectName17 = Controls/SilverlightUploader
+		SccLocalPath17 = Controls\\SilverlightUploader
+		SccProjectUniqueName18 = Controls\\UploaderContainer\\TKS.Controls.UploaderContainer.csproj
+		SccProjectTopLevelParentUniqueName18 = PDA.COP.FW.sln
+		SccProjectName18 = Controls/UploaderContainer
+		SccLocalPath18 = Controls\\UploaderContainer
+		SccProjectUniqueName19 = Controls\\BubbleContainer\\TKS.Controls.BubbleContainer.csproj
+		SccProjectTopLevelParentUniqueName19 = PDA.COP.FW.sln
+		SccProjectName19 = Controls/BubbleContainer
+		SccLocalPath19 = Controls\\BubbleContainer
+		SccProjectUniqueName20 = Core\\AssemblyNavigation\\TKS.Core.Engine.csproj
+		SccProjectTopLevelParentUniqueName20 = PDA.COP.FW.sln
+		SccProjectName20 = Core/AssemblyNavigation
+		SccLocalPath20 = Core\\AssemblyNavigation
+		SccProjectUniqueName21 = Service\\RestHelp\\TKS.Service.RestHelper.csproj
+		SccProjectTopLevelParentUniqueName21 = PDA.COP.FW.sln
+		SccProjectName21 = Service/RestHelp
+		SccLocalPath21 = Service\\RestHelp
+		SccProjectUniqueName22 = Service\\NotifyService\\TKS.Service.NotifyService.csproj
+		SccProjectTopLevelParentUniqueName22 = PDA.COP.FW.sln
+		SccProjectName22 = Service/NotifyService
+		SccLocalPath22 = Service\\NotifyService
+		SccProjectUniqueName23 = Modules_Business\\DataGrid_Sample_MVVM\\DataGrid_Sample_MVVM.csproj
+		SccProjectTopLevelParentUniqueName23 = PDA.COP.FW.sln
+		SccProjectName23 = Modules_Business/DataGrid_Sample_MVVM
+		SccLocalPath23 = Modules_Business\\DataGrid_Sample_MVVM
+		SccProjectUniqueName24 = Web\\Web.csproj
+		SccProjectName24 = Web
+		SccLocalPath24 = Web
+		SccProjectUniqueName25 = Modules_Business\\WelcomePage\\WelcomePage.csproj
+		SccProjectTopLevelParentUniqueName25 = PDA.COP.FW.sln
+		SccProjectName25 = Modules_Business/WelcomePage
+		SccLocalPath25 = Modules_Business\\WelcomePage
+		SccProjectUniqueName26 = Modules_Flows\\BaseConfigModule\\BaseConfigModule.csproj
+		SccProjectTopLevelParentUniqueName26 = PDA.COP.FW.sln
+		SccProjectName26 = Modules_Flows/BaseConfigModule
+		SccLocalPath26 = Modules_Flows\\BaseConfigModule
+		SccProjectUniqueName27 = Modules_Flows\\TreeViewV1\\TreeViewV1.csproj
+		SccProjectTopLevelParentUniqueName27 = PDA.COP.FW.sln
+		SccProjectName27 = Modules_Flows/TreeViewV1
+		SccLocalPath27 = Modules_Flows\\TreeViewV1
+		SccProjectUniqueName28 = Modules_Flows\\TreeViewV2\\TreeViewV2.csproj
+		SccProjectTopLevelParentUniqueName28 = PDA.COP.FW.sln
+		SccProjectName28 = Modules_Flows/TreeViewV2
+		SccLocalPath28 = Modules_Flows\\TreeViewV2
+		SccProjectUniqueName29 = Modules_Business\\ControlsSample\\ControlsSample.csproj
+		SccProjectTopLevelParentUniqueName29 = PDA.COP.FW.sln
+		SccProjectName29 = Modules_Business/ControlsSample
+		SccLocalPath29 = Modules_Business\\ControlsSample
+		SccProjectUniqueName30 = Modules_Flows\\MainPage\\MainPage.csproj
+		SccProjectTopLevelParentUniqueName30 = PDA.COP.FW.sln
+		SccProjectName30 = Modules_Flows/MainPage
+		SccLocalPath30 = Modules_Flows\\MainPage
+		SccProjectUniqueName31 = Modules_Flows\\MainPageV2\\MainPageV2.csproj
+		SccProjectTopLevelParentUniqueName31 = PDA.COP.FW.sln
+		SccProjectName31 = Modules_Flows/MainPageV2
+		SccLocalPath31 = Modules_Flows\\MainPageV2
+		SccProjectUniqueName32 = Modules_Flows\\MainPageV1\\MainPageV1.csproj
+		SccProjectTopLevelParentUniqueName32 = PDA.COP.FW.sln
+		SccProjectName32 = Modules_Flows/MainPageV1
+		SccLocalPath32 = Modules_Flows\\MainPageV1
+		SccProjectUniqueName33 = LoadFrame\\BootShell\\BootShell.csproj
+		SccProjectTopLevelParentUniqueName33 = PDA.COP.FW.sln
+		SccProjectName33 = LoadFrame/BootShell
+		SccLocalPath33 = LoadFrame\\BootShell
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1249D25F-305E-4096-B3E3-3D333594D1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1249D25F-305E-4096-B3E3-3D333594D1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1249D25F-305E-4096-B3E3-3D333594D1B3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1249D25F-305E-4096-B3E3-3D333594D1B3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ABD60D-9676-4BA5-84B4-863A2F84EDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ABD60D-9676-4BA5-84B4-863A2F84EDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ABD60D-9676-4BA5-84B4-863A2F84EDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ABD60D-9676-4BA5-84B4-863A2F84EDE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3644B9C-8241-4457-B153-FFAB8E674A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3644B9C-8241-4457-B153-FFAB8E674A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3644B9C-8241-4457-B153-FFAB8E674A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3644B9C-8241-4457-B153-FFAB8E674A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E08F62-2121-4AF8-B3B6-0F7049239F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E08F62-2121-4AF8-B3B6-0F7049239F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E08F62-2121-4AF8-B3B6-0F7049239F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E08F62-2121-4AF8-B3B6-0F7049239F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C0F3A4-001C-4820-A177-F8DB914C4EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C0F3A4-001C-4820-A177-F8DB914C4EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C0F3A4-001C-4820-A177-F8DB914C4EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C0F3A4-001C-4820-A177-F8DB914C4EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2845F232-813D-43B7-96C8-E5889F592482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2845F232-813D-43B7-96C8-E5889F592482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2845F232-813D-43B7-96C8-E5889F592482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2845F232-813D-43B7-96C8-E5889F592482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E543798-E110-49C2-A211-505F5607F0D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E543798-E110-49C2-A211-505F5607F0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E543798-E110-49C2-A211-505F5607F0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E543798-E110-49C2-A211-505F5607F0D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE10DA38-4092-4E99-BE4B-2FEDD00254A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE10DA38-4092-4E99-BE4B-2FEDD00254A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE10DA38-4092-4E99-BE4B-2FEDD00254A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE10DA38-4092-4E99-BE4B-2FEDD00254A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F67486-33AC-43E4-8B51-5A59408D4824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F67486-33AC-43E4-8B51-5A59408D4824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F67486-33AC-43E4-8B51-5A59408D4824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F67486-33AC-43E4-8B51-5A59408D4824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8020F1AA-2753-467A-8FC1-0CBACEADEA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8020F1AA-2753-467A-8FC1-0CBACEADEA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8020F1AA-2753-467A-8FC1-0CBACEADEA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8020F1AA-2753-467A-8FC1-0CBACEADEA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86AF536-61C8-468E-9967-FC9C08C74147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86AF536-61C8-468E-9967-FC9C08C74147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86AF536-61C8-468E-9967-FC9C08C74147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86AF536-61C8-468E-9967-FC9C08C74147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7D9CAE-E69C-4D5A-B673-94056E32BA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2499C368-120F-4597-860D-48639A991B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2499C368-120F-4597-860D-48639A991B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2499C368-120F-4597-860D-48639A991B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2499C368-120F-4597-860D-48639A991B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DED3DB2-9876-4204-A427-4F37D5B44D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DED3DB2-9876-4204-A427-4F37D5B44D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DED3DB2-9876-4204-A427-4F37D5B44D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DED3DB2-9876-4204-A427-4F37D5B44D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F060B3-E37E-4DB4-AC75-366020945CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F060B3-E37E-4DB4-AC75-366020945CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F060B3-E37E-4DB4-AC75-366020945CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F060B3-E37E-4DB4-AC75-366020945CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAD4856-3C6E-4315-A811-91144D5EE6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAD4856-3C6E-4315-A811-91144D5EE6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAD4856-3C6E-4315-A811-91144D5EE6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAD4856-3C6E-4315-A811-91144D5EE6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91083AC8-9036-43F1-8074-A59769558862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91083AC8-9036-43F1-8074-A59769558862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91083AC8-9036-43F1-8074-A59769558862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91083AC8-9036-43F1-8074-A59769558862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E123853-63CC-4BE8-9658-1D2CE4466CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E123853-63CC-4BE8-9658-1D2CE4466CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E123853-63CC-4BE8-9658-1D2CE4466CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E123853-63CC-4BE8-9658-1D2CE4466CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384EC7C2-52B4-4382-820A-A69BA7CF57D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384EC7C2-52B4-4382-820A-A69BA7CF57D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384EC7C2-52B4-4382-820A-A69BA7CF57D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384EC7C2-52B4-4382-820A-A69BA7CF57D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149BFEBF-459F-43D3-BA47-703755504383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149BFEBF-459F-43D3-BA47-703755504383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149BFEBF-459F-43D3-BA47-703755504383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149BFEBF-459F-43D3-BA47-703755504383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CF8B50-3381-4FB1-9A2A-425607B74241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CF8B50-3381-4FB1-9A2A-425607B74241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CF8B50-3381-4FB1-9A2A-425607B74241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CF8B50-3381-4FB1-9A2A-425607B74241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D23DA2-7A25-4C48-BE7B-4053663843B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D23DA2-7A25-4C48-BE7B-4053663843B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D23DA2-7A25-4C48-BE7B-4053663843B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D23DA2-7A25-4C48-BE7B-4053663843B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A38A402-F32F-456B-BD48-1D2212B7D704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A38A402-F32F-456B-BD48-1D2212B7D704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A38A402-F32F-456B-BD48-1D2212B7D704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A38A402-F32F-456B-BD48-1D2212B7D704}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DED3DB2-9876-4204-A427-4F37D5B44D42} = {39426750-30AC-47D4-B887-0C2BA5C96977}
+		{AED03F4E-8AC5-4EE3-9989-F87C5CF55B38} = {E793C562-26E1-48BB-97BC-146B117710DC}
+		{5A38A402-F32F-456B-BD48-1D2212B7D704} = {E793C562-26E1-48BB-97BC-146B117710DC}
+		{61ABD60D-9676-4BA5-84B4-863A2F84EDE4} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{D3644B9C-8241-4457-B153-FFAB8E674A71} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{3E543798-E110-49C2-A211-505F5607F0D9} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{FA74BFC2-89BB-43CC-A9F6-650BE5D005E0} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{EA333A89-FB44-48CD-8CD0-AB3BDAFBEAB0} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{FE10DA38-4092-4E99-BE4B-2FEDD00254A6} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{B86AF536-61C8-468E-9967-FC9C08C74147} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{2499C368-120F-4597-860D-48639A991B01} = {9C156F89-EBFF-436D-A945-EB8C32ECE039}
+		{2845F232-813D-43B7-96C8-E5889F592482} = {F13081F4-2A6F-46BE-B637-87065167C3F2}
+		{6E7D9CAE-E69C-4D5A-B673-94056E32BA69} = {F13081F4-2A6F-46BE-B637-87065167C3F2}
+		{85FF90D7-82F9-42AC-A5C0-A21EF5BC0FCC} = {F13081F4-2A6F-46BE-B637-87065167C3F2}
+		{393A77A9-E205-4ECD-872B-4CE4FB6CC5C0} = {F13081F4-2A6F-46BE-B637-87065167C3F2}
+		{149BFEBF-459F-43D3-BA47-703755504383} = {F13081F4-2A6F-46BE-B637-87065167C3F2}
+		{91083AC8-9036-43F1-8074-A59769558862} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{2E123853-63CC-4BE8-9658-1D2CE4466CDE} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{384EC7C2-52B4-4382-820A-A69BA7CF57D2} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{61CF8B50-3381-4FB1-9A2A-425607B74241} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{0E22C42F-44F9-4ADC-B607-B95A70CC0F3E} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{76D23DA2-7A25-4C48-BE7B-4053663843B0} = {FEF46BAF-660B-48F4-AFEC-18DCD740748C}
+		{D0E08F62-2121-4AF8-B3B6-0F7049239F98} = {C7AE55AF-0B4B-4513-B08E-94BF955DE435}
+		{03C0F3A4-001C-4820-A177-F8DB914C4EDC} = {C7AE55AF-0B4B-4513-B08E-94BF955DE435}
+		{7D9ACCC7-E095-4E4D-8AAA-050E4CDF335A} = {C7AE55AF-0B4B-4513-B08E-94BF955DE435}
+		{C918C5F6-1273-4B9E-BA28-00CDBF7FACE5} = {F0298B38-EC96-4AC3-8E58-2303E29FDEAA}
+		{29F67486-33AC-43E4-8B51-5A59408D4824} = {F0298B38-EC96-4AC3-8E58-2303E29FDEAA}
+		{8020F1AA-2753-467A-8FC1-0CBACEADEA94} = {F0298B38-EC96-4AC3-8E58-2303E29FDEAA}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {F0298B38-EC96-4AC3-8E58-2303E29FDEAA}
+		{EB32E28F-F66D-4FE2-A6EE-FF9A4D3249CB} = {FDB8653D-FF77-4479-AFB3-013E8C2C281D}
+		{20F060B3-E37E-4DB4-AC75-366020945CF3} = {590081DA-72C5-4D3B-92C9-4DF4C42F7648}
+	EndGlobalSection
+EndGlobal

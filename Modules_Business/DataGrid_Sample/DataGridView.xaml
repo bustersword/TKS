@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="DataGrid_Sample.DataGridView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ignore="http://www.ignore.com"
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+              xmlns:MyDataGrid="clr-namespace:TKS.Controls;assembly=TKS.Controls.MyDataGrid"
+        
+             mc:Ignorable="d ignore"
+             d:DesignWidth="800" d:DesignHeight="600"
+             >
+
+    <Border BorderBrush="#FF72B8F1">
+        <Grid x:Name="LayoutRoot" Background="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="119"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--begin layoutSubNode-->
+
+            <!--begin head-->
+            <Grid x:Name="LayoutSubNode" Grid.Row="0" Grid.Column="0" Margin="0" Grid.ColumnSpan="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <sdk:Label Grid.Row="0" Grid.Column="0" Content="状态代码" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <TextBox x:Name="TKS_STATUS_CODE" Grid.Column="1" HorizontalAlignment="Center" Height="23" Margin="0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
+                <sdk:Label Content="日期" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <sdk:DatePicker x:Name="TKS_PLAN_START_TIME"  Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="0" VerticalAlignment="Center" Width="148" SelectedDateFormat="Long"/>
+
+                <sdk:Label Grid.Row="1" Grid.Column="0" Content="用车事由" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <TextBox x:Name="TKS_USE_REASONS"  Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="23" Margin="0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="120"/>
+
+                <sdk:Label Grid.Row="1" Grid.Column="2" Content="处理意见" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <TextBox x:Name="TKS_PROC_OPINION"  Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="0" TextWrapping="Wrap"   VerticalAlignment="Center" Width="120"/>
+
+
+            </Grid>
+            <!--End head-->
+
+            <!--begin buttons-->
+            <StackPanel Margin="5,5,5,0" Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="4">
+                <Button x:Name="btn_Query" Click="btn_Query_Click_1" Height="30"  Width="100" Content="查询"/>
+                <Button x:Name="btn_Add" Click="btn_Add_Click_1"  Height="30"  Width="100" Content="新增" Margin="10,0,0,0" />
+                <Button x:Name="btn_Delete" Click="btn_Delete_Click_1"  Height="30"  Width="100" Content="删除" Margin="10,0,0,0" />
+
+            </StackPanel>
+            <!--end buttons-->
+
+            <!--begin datagrid-->
+            <MyDataGrid:MyDataGrid x:Name="MyDataGrid" Grid.Row="2" FrozenColumnCount="4"
+                                   PageIndexChanged="MyDataGrid_PageIndexChanged_1"
+                                   HorizontalContentAlignment="Stretch"
+                                   Margin="0" VerticalContentAlignment="Stretch" Height="auto" Grid.ColumnSpan="4"     >
+                <MyDataGrid:MyDataGrid.GridColums   >
+                    <sdk:DataGridTemplateColumn Header="操作" Width="100" >
+                        <sdk:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                    <Button Margin="3" Click="Button_Click_1" Content="你点啊"></Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </sdk:DataGridTemplateColumn.CellTemplate>
+                    </sdk:DataGridTemplateColumn>
+                    <sdk:DataGridCheckBoxColumn  IsReadOnly="False"  Binding="{Binding IsChecked}"  Header="选择"></sdk:DataGridCheckBoxColumn>
+                    <sdk:DataGridTextColumn   IsReadOnly="True" Binding="{Binding DOC_NO}" Header="记录编号" Width="100" ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn  IsReadOnly="True" Binding="{Binding STATUS_CODE}" Header="状态代码" Width="100"  ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding STATUS_NAME}" Header="状态名称" Width="200"  ></sdk:DataGridTextColumn>
+
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding DECL_DATE}" Header="申请时间" Width="100"  ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding DECL_MAN_NAME}" Header="申请人名称" Width="100"  ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding USE_REASONS}" Header="用车事由" Width="100"  ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding PROC_OPINION}" Header="处理意见" Width="200" ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding CURNODE}" Header="当前节点" Width="100"  ></sdk:DataGridTextColumn>
+                    <sdk:DataGridTextColumn IsReadOnly="True" Binding="{Binding FID}" Header="流程ID" Width="200" ></sdk:DataGridTextColumn>
+                </MyDataGrid:MyDataGrid.GridColums>
+            </MyDataGrid:MyDataGrid>
+            <!--End datagrid-->
+
+            <!--End layoutSubNode-->
+
+        </Grid>
+        <!--root-->
+    </Border>
+</UserControl>

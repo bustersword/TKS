@@ -1,0 +1,62 @@
+http://IP地址:9080/dcws/RequestService?wsdl
+
+如接口方法为：requestExamine(
+		String username, //用户名 String -- 服务授权的用户名，用户名暂定为：123456
+                String password,  //密码 String -- 服务授权的密码(需要MD5加密),密码暂定为：123456
+		String serviceCode,  //服务标识 String,固定为：S_1_20140717_FE5E370D19003AEAE0400A0A047326A7
+		String condition,  // 查询条件 String XML
+		String clientInfo // 调用客户端信息的String XML
+		)
+	condition范本：
+		<condition><item><SFZHM>510222197801010113</SFZHM><XM>张三</XM></item></condition>
+	clientInfo范本：
+		<clientInfo><ip>127.0.0.1</ip><loginName>sadmin</loginName></clientInfo>
+	ip：指调用电脑真实IP，如202.2.22.3，loginName指提供服务者用户名（部门间共享平台中的用户名，先暂定为sadmin）
+
+	响应：
+	结果范本：
+		<?xml version="1.0" encoding="UTF-8"?>
+		<response>
+			<head>
+				<username>用户名 String</username>
+				<password>密码 String</password>
+				<serviceCode>S_1_20140717_FE5E370D19003AEAE0400A0A047326A7</serviceCode>
+				<condition>
+					<item>
+						<SFZHM>510222197801010113</SFZHM>
+						<XM>张三</XM>
+					</item>
+				</condition>
+				<requiredItems>
+					<item>
+						<XM>姓名</XM>
+						<SFZHM>身份证号</SFZHM>
+					</item>
+				</requiredItems>
+				<clientInfo>
+					<ip>127.0.0.1</ip>
+					<loginName>sadmin</loginName>
+				</clientInfo>
+			</head>
+			<body>
+				<message>查询成功</message>
+				<resultCode>00</resultCode>  //00表示查询成功，其它值都代表查询失败，只有在值为00的情况下，取<resultList>才有意义。
+				<resultList>
+					<result>
+						<EXAMINE>1</EXAMINE>  //1表示有效，0表示无效
+					</result>
+				</resultList>
+			</body>
+		</response>
+
+2014072312233177
+2014072312232068
+2014072312225410
+2014072312224270
+2014072312230726
+2014072312160678
+2014072312155555
+2014072312154490
+2014072312153334
+2014072312152130
+2014072312150957

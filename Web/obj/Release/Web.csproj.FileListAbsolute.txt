@@ -1,0 +1,12 @@
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\bin\default.xml
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\bin\Web.dll
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\bin\Web.pdb
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\obj\Release\Web.csprojResolveAssemblyReference.cache
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\obj\Release\Web.dll
+D:\Works\PDA-Customs\COP\V3\Framework\ECI.PDA.COP.Framework\Web\obj\Release\Web.pdb
+D:\GitHub\TKS\Web\bin\default.xml
+D:\GitHub\TKS\Web\bin\Web.dll
+D:\GitHub\TKS\Web\bin\Web.pdb
+D:\GitHub\TKS\Web\obj\Release\Web.csprojResolveAssemblyReference.cache
+D:\GitHub\TKS\Web\obj\Release\Web.dll
+D:\GitHub\TKS\Web\obj\Release\Web.pdb

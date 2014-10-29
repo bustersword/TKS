@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dllroot>
+  <assembly name="LoginLibrary.dll" version="1.0.0.0" size="968704">
+    <reference name="Microsoft.Expression.Drawing.dll" version="4.0.5.0" size="124928" />
+    <reference name="Microsoft.Expression.Interactions.dll" version="4.0.5.0" size="89088" />
+    <reference name="Model.SL.dll" version="1.0.0.0" size="17408" />
+    <reference name="PDA.COP.FW.AppCommon.dll" version="1.0.0.0" size="40448" />
+    <reference name="PDA.COP.FW.GridExtension.dll" version="1.0.0.0" size="14848" />
+    <reference name="PDA.COP.FW.IModule.dll" version="1.0.0.0" size="4608" />
+    <reference name="PDA.COP.FW.SilverlightMessageBoxLibrary.dll" version="1.0.0.0" size="45056" />
+    <reference name="PDA.COP.FW.TKS.MyDataGrid.dll" version="1.0.0.0" size="15360" />
+    <reference name="RestSharp.Silverlight.dll" version="104.4.0.0" size="146432" />
+    <reference name="System.ComponentModel.DataAnnotations.dll" version="2.0.5.0" size="75656" />
+    <reference name="System.ServiceModel.Extensions.dll" version="2.0.5.0" size="124792" />
+    <reference name="System.ServiceModel.NetTcp.dll" version="2.0.5.0" size="112496" />
+    <reference name="System.Windows.Controls.Data.DataForm.Toolkit.dll" version="4.0.5.0" size="128872" />
+    <reference name="System.Windows.Controls.Data.dll" version="2.0.5.0" size="468856" />
+    <reference name="System.Windows.Controls.Data.Input.dll" version="2.0.5.0" size="71552" />
+    <reference name="System.Windows.Controls.Data.Toolkit.dll" version="4.0.5.0" size="33128" />
+    <reference name="System.Windows.Controls.dll" version="2.0.5.0" size="370544" />
+    <reference name="System.Windows.Controls.Input.dll" version="2.0.5.0" size="92024" />
+    <reference name="System.Windows.Controls.Input.Toolkit.dll" version="4.0.5.0" size="293224" />
+    <reference name="System.Windows.Controls.Navigation.dll" version="2.0.5.0" size="75648" />
+    <reference name="System.Windows.Controls.Toolkit.dll" version="4.0.5.0" size="359784" />
+    <reference name="System.Windows.Controls.Toolkit.Internals.dll" version="4.0.5.0" size="77312" />
+    <reference name="System.Windows.Data.dll" version="2.0.5.0" size="71528" />
+    <reference name="System.Windows.Interactivity.dll" version="4.0.5.0" size="37376" />
+    <reference name="System.Xml.Linq.dll" version="2.0.5.0" size="124768" />
+    <reference name="System.Xml.Serialization.dll" version="2.0.5.0" size="321392" />
+  </assembly>
+  <assembly name="MainPage.dll" version="1.0.0.1" size="274944">
+    <reference name="Microsoft.Expression.Effects.dll" version="4.0.5.0" size="122368" />
+    <reference name="Microsoft.Expression.Interactions.dll" version="4.0.5.0" size="89088" />
+    <reference name="Model.SL.dll" version="1.0.0.0" size="17408" />
+    <reference name="PDA.COP.FW.AppCommon.dll" version="1.0.0.0" size="40448" />
+    <reference name="PDA.COP.FW.AssemblyNavigation.dll" version="1.0.3.0" size="34816" />
+    <reference name="PDA.COP.FW.BubbleContainer.dll" version="1.0.0.0" size="10752" />
+    <reference name="PDA.COP.FW.CONTROLS.dll" version="1.0.0.0" size="16384" />
+    <reference name="PDA.COP.FW.CONTROLS.RichText.dll" version="1.0.0.0" size="219136" />
+    <reference name="PDA.COP.FW.GridExtension.dll" version="1.0.0.0" size="14848" />
+    <reference name="PDA.COP.FW.ImgMenu.dll" version="1.0.0.0" size="49664" />
+    <reference name="PDA.COP.FW.IModule.dll" version="1.0.0.0" size="4608" />
+    <reference name="PDA.COP.FW.SilverlightMessageBoxLibrary.dll" version="1.0.0.0" size="45056" />
+    <reference name="PDA.COP.FW.TKS.MyDataGrid.dll" version="1.0.0.0" size="15360" />
+    <reference name="RestSharp.Silverlight.dll" version="104.4.0.0" size="146432" />
+    <reference name="System.ComponentModel.DataAnnotations.dll" version="2.0.5.0" size="75656" />
+    <reference name="System.ServiceModel.Extensions.dll" version="2.0.5.0" size="124792" />
+    <reference name="System.ServiceModel.NetTcp.dll" version="2.0.5.0" size="112496" />
+    <reference name="System.Windows.Controls.Data.dll" version="2.0.5.0" size="468856" />
+    <reference name="System.Windows.Controls.Data.Input.dll" version="2.0.5.0" size="71552" />
+    <reference name="System.Windows.Controls.dll" version="2.0.5.0" size="370544" />
+    <reference name="System.Windows.Controls.Input.Toolkit.dll" version="4.0.5.0" size="293224" />
+    <reference name="System.Windows.Controls.Navigation.dll" version="2.0.5.0" size="75648" />
+    <reference name="System.Windows.Controls.Toolkit.dll" version="4.0.5.0" size="359784" />
+    <reference name="System.Windows.Controls.Toolkit.Internals.dll" version="4.0.5.0" size="77312" />
+    <reference name="System.Windows.Data.dll" version="2.0.5.0" size="71528" />
+    <reference name="System.Windows.Interactivity.dll" version="4.0.5.0" size="37376" />
+    <reference name="System.Xml.Linq.dll" version="2.0.5.0" size="124768" />
+    <reference name="System.Xml.Serialization.dll" version="2.0.5.0" size="321392" />
+  </assembly>
+  <assembly name="TestAModule.dll" version="1.0.0.0" size="32768">
+    <reference name="Model.SL.dll" version="1.0.0.0" size="17408" />
+    <reference name="PDA.COP.FW.AppCommon.dll" version="1.0.0.0" size="40448" />
+    <reference name="PDA.COP.FW.AssemblyNavigation.dll" version="1.0.3.0" size="34816" />
+    <reference name="PDA.COP.FW.GridExtension.dll" version="1.0.0.0" size="14848" />
+    <reference name="PDA.COP.FW.IModule.dll" version="1.0.0.0" size="4608" />
+    <reference name="PDA.COP.FW.SilverlightMessageBoxLibrary.dll" version="1.0.0.0" size="45056" />
+    <reference name="PDA.COP.FW.SilverlightUploader.dll" version="1.0.0.0" size="38912" />
+    <reference name="PDA.COP.FW.TKS.MyDataGrid.dll" version="1.0.0.0" size="15360" />
+    <reference name="RestSharp.Silverlight.dll" version="104.4.0.0" size="146432" />
+    <reference name="System.ComponentModel.DataAnnotations.dll" version="2.0.5.0" size="75656" />
+    <reference name="System.ServiceModel.Extensions.dll" version="2.0.5.0" size="124792" />
+    <reference name="System.ServiceModel.NetTcp.dll" version="2.0.5.0" size="112496" />
+    <reference name="System.Windows.Controls.Data.dll" version="2.0.5.0" size="468856" />
+    <reference name="System.Windows.Controls.Data.Input.dll" version="2.0.5.0" size="71552" />
+    <reference name="System.Windows.Controls.Data.Toolkit.dll" version="4.0.5.0" size="33128" />
+    <reference name="System.Windows.Controls.dll" version="2.0.5.0" size="370544" />
+    <reference name="System.Windows.Controls.Input.Toolkit.dll" version="4.0.5.0" size="293224" />
+    <reference name="System.Windows.Controls.Navigation.dll" version="2.0.5.0" size="75648" />
+    <reference name="System.Windows.Controls.Toolkit.dll" version="4.0.5.0" size="359784" />
+    <reference name="System.Windows.Controls.Toolkit.Internals.dll" version="4.0.5.0" size="77312" />
+    <reference name="System.Windows.Data.dll" version="2.0.5.0" size="71528" />
+    <reference name="System.Xml.Linq.dll" version="2.0.5.0" size="124768" />
+    <reference name="System.Xml.Serialization.dll" version="2.0.5.0" size="321392" />
+    <reference name="TabContainer.dll" version="1.0.0.0" size="48128" />
+    <reference name="UploaderContainer.dll" version="1.0.0.0" size="11264" />
+  </assembly>
+  <assembly name="WelcomeModule.dll" version="1.0.0.0" size="6144">
+    <reference name="System.ComponentModel.DataAnnotations.dll" version="2.0.5.0" size="75656" />
+    <reference name="System.Windows.Controls.Data.Input.dll" version="2.0.5.0" size="71552" />
+    <reference name="System.Windows.Controls.Navigation.dll" version="2.0.5.0" size="75648" />
+  </assembly>
+</dllroot>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<flowroot>
+  <flow name="copframe">
+    <step name="LoginLibrary" ignore="False" order="1" type="LoginLibrary.PageExt" isdownloaded="false" ispage="false" />
+    <step name="MainPage" ignore="False" order="2" type="MainPage.StepFinally" isdownloaded="false" ispage="false" />
+  </flow>
+  <flow name="cop">
+    <step name="LoginLibrary" ignore="False" order="1" type="LoginLibrary.PageExt" isdownloaded="false" ispage="false" />
+    <!--<step name="LoadBaseData" ignore="False" order="2" type="LoadBaseData.LoadBaseData" isdownloaded="false" ispage="false" />-->
+    <step name="AppLibrary" ignore="False" order="2" type="AppLibrary.PageExt" isdownloaded="false" ispage="false" />
+    <step name="MainPage" ignore="False" order="3" type="MainPage.StepFinally" isdownloaded="false" ispage="false" />
+  </flow>
+</flowroot>

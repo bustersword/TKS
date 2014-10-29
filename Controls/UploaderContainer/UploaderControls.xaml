@@ -1,0 +1,26 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:SilverlightUploader="clr-namespace:TKS.Controls;assembly=TKS.Controls.Uploader"
+    x:Class="TKS.Controls.UploaderConTaniner"
+    mc:Ignorable="d"
+       xmlns:common="clr-namespace:TKS.Controls.Common"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <UserControl.Resources>
+        <common:HostUrlConverter x:Key="HostUrlConverter"/>
+    </UserControl.Resources>
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+        <SilverlightUploader:Uploader x:Name="uploader1" AddText="上传本地文件"  RemoveText="取消"/>
+        <TextBlock Text="{Binding ReturnUrl, ElementName=uploader1, Converter={StaticResource HostUrlConverter}}"></TextBlock>
+
+        <SilverlightUploader:Uploader x:Name="uploader2" AddText="上传本地文件"  RemoveText="取消"/>
+        <TextBlock Text="{Binding ReturnUrl, ElementName=uploader2, Converter={StaticResource HostUrlConverter}}"></TextBlock>
+
+
+        <SilverlightUploader:Uploader x:Name="uploader3" AddText="上传本地文件"  RemoveText="取消"/>
+        <TextBlock Text="{Binding ReturnUrl, ElementName=uploader3, Converter={StaticResource HostUrlConverter}}"></TextBlock>
+    </StackPanel>
+</UserControl>
